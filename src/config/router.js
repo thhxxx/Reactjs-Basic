@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Home from '../views/Home.js';
 import ListStudent from '../views/ListStudent.js';
 import AddStudent from '../views/AddStudent.js';
 import BlackList from '../views/BlackList.js';
@@ -13,10 +12,6 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
-      },
-      {
-        path: '/list-student',
         element: <ListStudent />
       },
       {

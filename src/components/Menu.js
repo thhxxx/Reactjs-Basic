@@ -7,8 +7,8 @@ const Menu = () => {
     <nav>
       <ul className='text-center bg-sky-400/10 inline-flex rounded-full'>
         {
-          initMenu.map(value => {
-            return <li className='py-2.5 px-5 text-sky-600 first:rounded-l-full'>
+          initMenu.map((value, index) => {
+            return <li className='py-2.5 px-5 text-sky-600 first:rounded-l-full' key={index}>
               <NavLink to={value.link_to}>
                 {value.name}
               </NavLink>
