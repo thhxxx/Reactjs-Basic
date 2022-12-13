@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 nav ul li:has(> a.active) {
-    background: #0284C7;
-    color: #fff;
+    background: #fff;
+    color: #0284C7;
 }

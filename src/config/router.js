@@ -1,9 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import ListStudent from '../views/ListStudent.js';
-import AddStudent from '../views/AddStudent.js';
 import BlackList from '../views/BlackList.js';
 import Login from '../views/Login.js';
-import GeneralLayout from '../Layouts/GeneralLayout.js';
+import GeneralLayout from '../layouts/GeneralLayout.js';
 
 const router = createBrowserRouter([
   {
@@ -15,18 +14,14 @@ const router = createBrowserRouter([
         element: <ListStudent />
       },
       {
-        path: '/add-student',
-        element: <AddStudent />
-      },
-      {
         path: '/black-list',
         element: <BlackList />
+      },
+      {
+        path: '/login',
+        element: <Login />
       }
     ]
   },
-  {
-    path: '/login',
-    element: <Login />
-  }
 ]);
 export default router;

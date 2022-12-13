@@ -4,10 +4,6 @@ export const initMenu = [
     link_to: '/'
   },
   {
-    name: 'Add Student',
-    link_to: '/add-student'
-  },
-  {
     name: 'Black List',
     link_to: '/black-list'
   },
